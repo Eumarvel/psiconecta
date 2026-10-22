@@ -1,9 +1,157 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="PsiConecta — atendimento psicológico online com Cinthia Renata Durante, CRP 06/149814"/>
 <title>PsiConecta | Cinthia Renata Durante</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f8f5f1;--primary:#1a1715;--accent:#b78945;--text:#171513;--muted:#5e5954;--success:#1d8b64;--shadow:0 24px 60px rgba(17,15,14,.09);--radius:24px}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#f8f5f1,#f3efe9);color:var(--text)}
+a{color:inherit;text-decoration:none}.container{width:min(1100px,calc(100% - 32px));margin:0 auto}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06)}
+.navbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-family:'Cormorant Garamond',serif;font-size:1.25rem}
+.brand-mark{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff}
+.nav-links{display:flex;gap:18px;color:var(--muted);font-size:.95rem}
+.nav-links a:hover,.nav-links a.active{color:var(--primary)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:999px;padding:.85rem 1.4rem;font-weight:700;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,var(--primary),#2a211d);color:#fff;box-shadow:0 12px 24px rgba(0,0,0,.15)}
+.btn-secondary{background:#fff;border:1px solid rgba(0,0,0,.1);color:var(--text)}
+.page-section{display:none}.page-section.active{display:block}
+.hero{padding:64px 0 40px}.hero h1{margin:0;font-size:clamp(2.4rem,5vw,4rem);font-family:'Cormorant Garamond',serif;line-height:.95;color:var(--primary)}
+.lead{margin-top:16px;color:var(--muted);line-height:1.7;max-width:640px}
+.eyebrow{display:inline-flex;padding:.45rem .85rem;border-radius:999px;background:rgba(255,255,255,.7);color:var(--primary);font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+.card{background:rgba(255,255,255,.88);border:1px solid rgba(0,0,0,.06);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid-4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.contact-card{padding:28px 22px;min-height:140px;display:flex;flex-direction:column;justify-content:center}
+.contact-card h3{margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-size:1.6rem}
+.contact-card p,.contact-card a{margin:0;word-break:break-word;overflow-wrap:anywhere;color:var(--muted)}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-weight:700;font-size:.9rem}
+.field input,.field select,.field textarea{width:100%;border-radius:14px;border:1px solid rgba(0,0,0,.1);padding:.85rem 1rem;font:inherit;background:#fff}
+.field textarea{min-height:110px;resize:vertical}
+.footer{padding:28px 0 40px;color:var(--muted);border-top:1px solid rgba(0,0,0,.06);margin-top:40px;font-size:.9rem}
+.whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:99;display:inline-flex;align-items:center;gap:8px;padding:14px 16px;border-radius:999px;background:#25D366;color:#fff!important;font-weight:700;box-shadow:0 12px 32px rgba(37,211,102,.45)}
+section{padding:36px 0}
+@media(max-width:800px){.grid-2,.grid-4{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container navbar">
+<a href="#inicio" class="brand" data-page="inicio"><div class="brand-mark">P</div><span>PsiConecta</span></a>
+<nav class="nav-links">
+<a href="#inicio" data-page="inicio">Início</a>
+<a href="#sobre" data-page="sobre">Sobre</a>
+<a href="#contato" data-page="contato">Contato</a>
+</nav>
+<a class="btn btn-secondary" href="#contato" data-page="contato">Agendar</a>
+</div></header>
+<main>
+<div id="page-inicio" class="page-section active">
+<section class="hero"><div class="container">
+<div class="eyebrow">Especialista em Saúde do Idoso · CRP 06/149814</div>
+<h1>Psicologia premium, acolhimento discreto e atenção pessoal.</h1>
+<p class="lead">Atendimento online com Cinthia Renata Durante. Sessões a R$ 200 · Pix · Google Meet.</p>
+<div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn btn-primary" href="#contato" data-page="contato">Agendar atendimento</a>
+<a class="btn btn-secondary" href="https://wa.me/5513997356921" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</div></section>
+<section><div class="container grid-2">
+<div class="card"><h2 style="margin-top:0;font-family:'Cormorant Garamond',serif">Como funciona</h2>
+<ol style="color:var(--muted);line-height:1.8;padding-left:18px">
+<li>Preencha o formulário de agendamento</li>
+<li>Confirme por Pix (R$ 200 / sessão)</li>
+<li>Receba o link do Google Meet</li>
+</ol></div>
+<div class="card"><h2 style="margin-top:0;font-family:'Cormorant Garamond',serif">Cinthia Renata Durante</h2>
+<p style="color:var(--muted);line-height:1.7">Especialista em Saúde do Idoso (UNIFESP) · CRP 06/149814 · Psiclinica InCor</p>
+<p style="margin:12px 0 0"><strong>WhatsApp:</strong> <a href="https://wa.me/5513997356921">(13) 99735-6921</a></p>
+<p style="margin:8px 0 0;word-break:break-all"><strong>E-mail:</strong> durantepisicologia@gmail.com</p>
+</div>
+</div></section>
+</div>
+<div id="page-sobre" class="page-section">
+<section class="hero"><div class="container">
+<div class="eyebrow">Sobre</div>
+<h1>Um espaço de acolhimento, cuidado e confiança.</h1>
+<p class="lead">Plataforma de atendimento psicológico online com a psicóloga Cinthia Renata Durante.</p>
+</div></section>
+</div>
+<div id="page-contato" class="page-section">
+<section class="hero"><div class="container">
+<div class="eyebrow">Agende seu atendimento</div>
+<h1>Agendamento online com Cinthia Renata Durante.</h1>
+<p class="lead">Preencha o formulário. O agendamento é enviado no WhatsApp e no e-mail, com link do Google Meet.</p>
+</div></section>
+<section><div class="container grid-2">
+<div class="card">
+<h2 style="margin-top:0;font-family:'Cormorant Garamond',serif">Fale conosco</h2>
+<div class="grid-4">
+<article class="card contact-card"><h3>E-mail</h3><p><a href="mailto:durantepisicologia@gmail.com">durantepisicologia@gmail.com</a></p></article>
+<article class="card contact-card"><h3>WhatsApp</h3><p><a href="https://wa.me/5513997356921" target="_blank" rel="noopener">(13) 99735-6921</a></p></article>
+<article class="card contact-card"><h3>CRP</h3><p>06/149814</p></article>
+<article class="card contact-card"><h3>Pagamento</h3><p>Pix · R$ 200 / sessão</p></article>
+</div>
+</div>
+<div class="card">
+<h2 style="margin-top:0;font-family:'Cormorant Garamond',serif">Agendamento online</h2>
+<form id="appointmentForm">
+<div class="field"><label for="name">Nome completo</label><input id="name" name="name" required placeholder="Seu nome"/></div>
+<div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required placeholder="seu@email.com"/></div>
+<div class="field"><label for="phone">WhatsApp</label><input id="phone" name="phone" required placeholder="(13) 99999-0000"/></div>
+<div class="field"><label for="date">Data</label><input id="date" name="date" type="date" required/></div>
+<div class="field"><label for="time">Horário</label>
+<select id="time" name="time" required>
+<option value="">Selecione</option>
+<option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option>
+<option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option>
+</select></div>
+<div class="field"><label for="message">Mensagem (opcional)</label><textarea id="message" name="message"></textarea></div>
+<button class="btn btn-primary" type="submit" style="width:100%">Agendar atendimento online</button>
+<p id="formStatus" style="margin-top:10px;font-weight:700"></p>
+</form>
+</div>
+</div></section>
+</div>
+</main>
+<footer class="footer"><div class="container">© 2026 PsiConecta · Cinthia Renata Durante · CRP 06/149814 · Pix R$ 200 · (13) 99735-6921</div></footer>
+<a class="whatsapp-float" href="https://wa.me/5513997356921?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">WhatsApp</a>
 <script>
-Promise.all([0,1,2,3].map(i=>fetch('part'+i+'.txt').then(r=>r.text())))
-.then(parts=>{document.open();document.write(atob(parts.join('')));document.close();})
-.catch(()=>{document.body.innerHTML='<p style="font-family:system-ui;padding:2rem">Atualize a página.</p>';});
-</script></head>
-<body><p style="font-family:system-ui;padding:2rem;color:#555">Carregando PsiConecta…</p></body></html>
+const WHATSAPP='5513997356921', PSY_EMAIL='durantepisicologia@gmail.com', PROFESSIONAL='Cinthia Renata Durante', CRP='06/149814';
+function showPage(page){
+  document.querySelectorAll('.page-section').forEach(el=>el.classList.remove('active'));
+  (document.getElementById('page-'+page)||document.getElementById('page-inicio')).classList.add('active');
+  document.querySelectorAll('[data-page]').forEach(a=>a.classList.toggle('active', a.dataset.page===page));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('[data-page]').forEach(el=>{
+  el.addEventListener('click',e=>{const p=el.dataset.page;if(!p)return;e.preventDefault();history.pushState({page:p},'','#'+p);showPage(p);});
+});
+const initial=(location.hash||'#inicio').replace('#','')||'inicio';
+showPage(['inicio','sobre','contato'].includes(initial)?initial:'inicio');
+window.addEventListener('popstate',()=>{const p=(location.hash||'#inicio').replace('#','');showPage(p);});
+const dateInput=document.getElementById('date');
+if(dateInput) dateInput.min=new Date().toISOString().slice(0,10);
+document.getElementById('appointmentForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const fd=new FormData(e.target);
+  const data={name:fd.get('name').toString().trim(),email:fd.get('email').toString().trim(),phone:fd.get('phone').toString().trim(),date:fd.get('date').toString().trim(),time:fd.get('time').toString().trim(),message:(fd.get('message')||'').toString().trim()};
+  if(!data.name||!data.email||!data.phone||!data.date||!data.time){document.getElementById('formStatus').textContent='Preencha todos os campos obrigatórios.';return;}
+  const meetUrl='https://meet.google.com/new';
+  const formattedDate=new Date(data.date+'T12:00:00').toLocaleDateString('pt-BR');
+  const summary='*Novo agendamento online*\nPsicóloga: '+PROFESSIONAL+' (CRP '+CRP+')\n\n*Paciente*\nNome: '+data.name+'\nE-mail: '+data.email+'\nTelefone: '+data.phone+'\nData: '+formattedDate+'\nHorário: '+data.time+'\nMensagem: '+(data.message||'—')+'\n\n*Google Meet*\n'+meetUrl;
+  const waUrl='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(summary);
+  const mailSubject=encodeURIComponent('Novo agendamento — '+data.name+' — '+formattedDate+' '+data.time);
+  const mailBody=encodeURIComponent('Paciente: '+data.name+'\nE-mail: '+data.email+'\nTelefone: '+data.phone+'\nData: '+formattedDate+'\nHorário: '+data.time+'\nMensagem: '+(data.message||'—')+'\nGoogle Meet: '+meetUrl);
+  window.open(waUrl,'_blank');
+  setTimeout(function(){window.location.href='mailto:'+PSY_EMAIL+'?subject='+mailSubject+'&body='+mailBody;},500);
+  document.getElementById('formStatus').textContent='Agendamento enviado no WhatsApp e e-mail!';
+  e.target.reset();
+});
+</script>
+</body>
+</html>
