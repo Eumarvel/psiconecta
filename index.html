@@ -1,24 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>PsiConecta | Cinthia Renata Durante</title>
 <script>
-Promise.all([
-  fetch("p1.b64").then(function(r){return r.text();}),
-  fetch("p2.b64").then(function(r){return r.text();})
-]).then(function(parts){
-  var html = atob(parts[0] + parts[1]);
-  document.open();
-  document.write(html);
-  document.close();
-}).catch(function(e){
-  document.body.innerHTML = "<p style=\"font-family:system-ui;padding:2rem\">Erro ao carregar. Tente atualizar a página.</p>";
-});
-</script>
-</head>
-<body>
-<p style="font-family:system-ui,sans-serif;padding:2rem;color:#5e5954">Carregando PsiConecta…</p>
-</body>
-</html>
+Promise.all([0,1,2,3].map(i=>fetch('part'+i+'.txt').then(r=>r.text())))
+.then(parts=>{document.open();document.write(atob(parts.join('')));document.close();})
+.catch(()=>{document.body.innerHTML='<p style="font-family:system-ui;padding:2rem">Atualize a página.</p>';});
+</script></head>
+<body><p style="font-family:system-ui;padding:2rem;color:#555">Carregando PsiConecta…</p></body></html>
